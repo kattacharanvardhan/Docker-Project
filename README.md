@@ -141,7 +141,7 @@ Docker-Project/
 
 ## Application Output
 
-<img src="images/output.png" width="100%">
+<img src="images/Output.png" width="100%">
 
 ---
 
