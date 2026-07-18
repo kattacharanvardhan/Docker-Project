@@ -15,7 +15,7 @@ Developers push source code to GitHub, Jenkins automatically detects the changes
 # 🏗️ Architecture
 
 <p align="center">
-  <img src="images/architecture.png" width="100%">
+  <img src="images/Flow.png" width="100%">
 </p>
 
 ---
