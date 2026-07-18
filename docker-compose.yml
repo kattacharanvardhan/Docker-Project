@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   internetbanking:
-    image: charanvardhan/internetbanking:lastest
+    image: charanvardhan/internetbanking:v1
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/lib/internetbanking
   mobilebanking:
-    image: charanvardhan/mobilebanking:lastest
+    image: charanvardhan/mobilebanking:v1
     ports:
       - "82:80"
     deploy:
@@ -17,7 +17,7 @@ services:
     volumes:
       - /var/lib/mobilebanking
   insurance:
-    image: charanvardhan/insurance:lastest
+    image: charanvardhan/insurance:v1
     ports:
       - "83:80"
     deploy:
@@ -25,7 +25,7 @@ services:
     volumes:
       - /var/lib/insurance
   loan:
-    image: charanvardhan/loans:lastest
+    image: charanvardhan/loans:v1
     ports:
       - "84:80"
     deploy:
