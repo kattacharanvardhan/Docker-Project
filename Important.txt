@@ -1,0 +1,28 @@
+DOCKER FILE : To create image by automation.
+
+DOCKER COMPOSE : To create multiple containers on single server.
+
+DOCKER SWARM : To create single containers on Multiple server.
+
+DOCKER STACK : Docker swarm + Docker compose
+
+GIVE PERMISSIONS:
+
+chmod 777 /var/run/docker.sock
+
+systemctl daemon-reload
+
+systemctl restart docker.service
+
+COMMAND:
+
+TO DEPLOY : docker stack deploy --compose-file docker-compose.yml stack_name
+
+TO LIST : docker stack ls
+
+TO GET CONTAINERS OF A STACK : docker stack ps stack_name
+
+TO GET SERVICES OF A STACK: docker stack services stack_name
+
+TO DELETE A STACK: docker stack rm stack_name
+
