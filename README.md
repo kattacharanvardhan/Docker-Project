@@ -2,7 +2,11 @@
 
 ## 📌 Project Overview
 
-This project demonstrates a complete CI/CD pipeline that automates the process of building, tagging, pushing, and deploying Dockerized applications using **Jenkins**, **Docker**, **Docker Hub**, and **Docker Swarm**.
+This project demonstrates the implementation of a complete Continuous Integration and Continuous Deployment (CI/CD) pipeline using Jenkins, Docker, Docker Hub, and Docker Swarm. The primary objective is to automate the software delivery process, from source code integration to application deployment across multiple servers.
+
+The pipeline begins when developers push application source code to a GitHub repository. Jenkins continuously monitors the repository and automatically triggers a pipeline whenever new changes are detected. The pipeline checks out the latest source code, builds a Docker image using a Dockerfile, tags the image with a version, and pushes it to Docker Hub.
+
+Once the image is successfully published, Jenkins deploys the latest version of the application to a Docker Swarm cluster using Docker Stack. The Swarm Manager schedules containers across multiple worker nodes, ensuring high availability, load distribution, and easy scalability. This automation minimizes manual intervention, reduces deployment errors, and enables faster software delivery.
 
 Developers push source code to GitHub, Jenkins automatically detects the changes, builds Docker images, pushes them to Docker Hub, and deploys the latest version to a Docker Swarm cluster using Docker Stack.
 
@@ -125,13 +129,13 @@ Docker-Project/
 
 ## Jenkins Pipeline
 
-<img src="images/jenkins-pipeline.png" width="100%">
+<img src="images/Jenkins-Pipeline.png" width="100%">
 
 ---
 
 ## Docker Swarm Cluster
 
-<img src="images/docker-swarm.png" width="100%">
+<img src="images/Docker-Compose.png" width="100%">
 
 ---
 
